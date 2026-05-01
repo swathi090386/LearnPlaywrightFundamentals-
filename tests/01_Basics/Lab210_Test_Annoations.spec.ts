@@ -15,9 +15,9 @@ test.only('focused test', async ({ page }) => {
 });
 
 // Mark as failing
-test.fail('expected to fail', async ({ page }) => {
+//test.fail('expected to fail', async ({ page }) => {
     // Test is expected to fail
-});
+//});
 
 // Slow test (3x timeout)
 //test.slow('slow test', async ({ page }) => {
