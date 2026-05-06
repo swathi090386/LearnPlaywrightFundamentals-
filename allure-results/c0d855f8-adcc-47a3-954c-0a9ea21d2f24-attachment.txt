@@ -1,0 +1,14 @@
+13
+#login
+#register
+#forgotten-password
+#my-account
+#address-book
+#wish-list
+#order-history
+#downloads
+#recurring-payments
+#reward-points
+#returns
+#transactions
+#newsletter

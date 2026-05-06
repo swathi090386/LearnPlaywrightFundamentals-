@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Mon May 04 16:43:37 EDT 2026","Tue May 05 10:47:48 EDT 2026","65050355","chromium","05_Allure_Reporting\230_Login.spec.ts","","","","Verify that the login works","Verify that the login is page works"
+"failed","Mon May 04 16:33:06 EDT 2026","Mon May 04 16:33:36 EDT 2026","29253","webkit","05_Allure_Reporting\230_Login.spec.ts","","","","Verify that the login works","Verify that the login is page works"
+"broken","Mon May 04 16:32:33 EDT 2026","Mon May 04 16:33:05 EDT 2026","31784","firefox","05_Allure_Reporting\230_Login.spec.ts","","","","Verify that the login works","Verify that the login is page works"

@@ -122,6 +122,86 @@ The following are automatically ignored and not pushed to the repository:
 - `/playwright-report/` - HTML test reports
 - `user-session.json` - Browser session state
 
+## Custom TTA Reporter 🎭
+
+This project includes a **Custom TTA HTML Reporter** that provides:
+
+- ✅ Real-time test execution dashboard
+- 📸 Screenshots and video recordings
+- 📡 Trace files for debugging
+- 📊 Detailed pass rate analytics
+- 📋 Step-by-step execution logs
+- 🎬 Video playback with player controls
+
+### Quick Start with Custom Reporter
+
+1. **Run tests:**
+   ```bash
+   npm test
+   ```
+
+2. **Open the report:**
+   ```bash
+   start tta-report/index.html
+   ```
+
+3. **View report history:**
+   ```bash
+   start tta-report/history.html
+   ```
+
+### What Gets Captured
+- ✅ **Screenshots**: One per test and per step
+- 🎥 **Videos**: Full test execution video (WebM format)
+- 📡 **Traces**: Playwright trace files for debugging
+- 📋 **Logs**: Console output organized by test step
+- ⏱️ **Timing**: Execution duration for each step
+
+### Report Artifacts
+After running tests, you'll find:
+
+```
+tta-report/
+├── index.html                  # Latest report (auto-redirect)
+├── report_20260505_143022.html # Timestamped report
+├── history.html                # All previous reports
+├── screenshots/                # Test screenshots
+├── videos/                     # Test videos
+└── traces/                     # Trace files
+```
+
+### Configuration Example
+
+The custom reporter is already configured in `playwright.config.ts`:
+
+```typescript
+reporter: [
+  ['html'],
+  ["allure-playwright"],
+  ['./CustomTTAReporter.ts']  // ← Custom TTA Reporter
+]
+```
+
+Global capture settings are enabled:
+
+```typescript
+use: {
+  screenshot: 'on',
+  video: 'on',
+  trace: 'on',
+  headless: false,
+}
+```
+
+### For Detailed Documentation
+
+See **[CUSTOM_REPORTER_SETUP.md](./CUSTOM_REPORTER_SETUP.md)** for:
+- Complete feature guide
+- Report filtering and navigation
+- Troubleshooting tips
+- Example test configurations
+
+
 ## Technologies
 
 - **Playwright**: Modern browser automation framework
