@@ -10,3 +10,5 @@ node_modules/
 # Local editor and session state
 .vscode/
 user-session.json
+# Environment variables
+.env
