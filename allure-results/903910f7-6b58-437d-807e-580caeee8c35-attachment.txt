@@ -1,0 +1,5 @@
+Fake user: {
+  firstName: 'Demario',
+  lastName: 'Metz',
+  email: 'Demario_Metz@gmail.com'
+}
